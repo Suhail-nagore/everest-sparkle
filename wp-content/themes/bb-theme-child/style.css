@@ -1,0 +1,355 @@
+/*
+Theme Name: PageBuilder Child Theme
+Theme URI: http://www.silentblast.com
+Version: 1.0
+Description: An example child theme that can be used as a starting point for custom development.
+Author: The Silentblast Team
+Author URI: http://www.silentblast.com
+template: bb-theme
+*/
+
+/* inquiry form */
+.inquiry-form {
+  max-width: 100%;
+  margin-bottom: 12px;
+  border-radius: 5px;
+  /*background: #123123; */
+}
+.inquiry-form > div {
+  padding: 2.5%;
+}
+.inquiry-form > div:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+/*
+.inquiry-form > div > div {
+	width: 50%;
+	float: left;
+}
+*/
+.inquiry-form > div > div {
+  padding-left: 1.25%;
+}
+
+.inquiry-form > div > div:first-of-type {
+  padding-right: 1.25%;
+  padding-left: 0;
+}
+
+.inquiry-form > h1 {
+}
+.inquiry-form > h2 {
+}
+.inquiry-form select {
+  background-color: #fcfcfc;
+  background-image: none;
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
+  box-shadow: none;
+  color: #808080;
+  display: block;
+  line-height: 1.42857;
+  padding: 6px 12px;
+  transition: all 0.15s ease-in-out 0s;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Portfolio Banner */
+
+#portfolio-banner {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  margin: 0 0 1.5em;
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+}
+#portfolio-banner > #portfolio-banner-overlay {
+  flex: 1;
+  background: rgba(0, 0, 0, 0.25);
+}
+#portfolio-banner > #portfolio-banner-overlay > h2 {
+  top: 50%;
+  left: 50%;
+  margin: 0;
+  color: #fff;
+  z-index: 1000;
+  font-size: 42px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+/* Portfolio Archive  & Category */
+
+#portfolio-content
+  > .container
+  > .row
+  > div[class*="col"]
+  > main
+  > .row
+  > div[class*="col"] {
+  text-align: center;
+}
+#portfolio-content
+  > .container
+  > .row
+  > div[class*="col"]
+  > main
+  > .row
+  > div[class*="col-sm-3"]:nth-of-type(4n + 1) {
+  clear: left;
+}
+#portfolio-content
+  > .container
+  > .row
+  > div[class*="col"]
+  > main
+  > .row
+  > div[class*="col"]
+  > a {
+  font-size: 18px;
+}
+#portfolio-content
+  > .container
+  > .row
+  > div[class*="col"]
+  > main
+  > .row
+  > div[class*="col"]
+  > a:hover {
+  text-decoration: none;
+}
+#portfolio-content
+  > .container
+  > .row
+  > div[class*="col"]
+  > main
+  > .row
+  > div[class*="col"]
+  > .gallery-cat-thumb {
+  overflow: hidden;
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+#portfolio-content
+  > .container
+  > .row
+  > div[class*="col"]
+  > main
+  > .row
+  > div[class*="col"]
+  > .gallery-cat-thumb
+  > a {
+}
+#portfolio-content
+  > .container
+  > .row
+  > div[class*="col"]
+  > main
+  > .row
+  > div[class*="col"]
+  > .gallery-cat-thumb
+  > a:hover {
+  text-decoration: none;
+}
+#portfolio-content
+  > .container
+  > .row
+  > div[class*="col"]
+  > main
+  > .row
+  > div[class*="col"]
+  > .gallery-cat-thumb
+  > a
+  > img {
+  display: inline;
+  /* max-width: 100%; */
+  transform: scale(1);
+  transition: 0.3s ease-in-out;
+}
+#portfolio-content
+  > .container
+  > .row
+  > div[class*="col"]
+  > main
+  > .row
+  > div[class*="col"]
+  > .gallery-cat-thumb
+  > a:hover
+  > img {
+  transform: scale(1.3);
+}
+
+/* Portfolio Single */
+
+#portfolio-content {
+}
+#portfolio-content > .container > .row {
+  padding-bottom: 1.75em;
+}
+#portfolio-content > .container > .row > div[class*="col"] {
+}
+#portfolio-content > .container > .row > div[class*="col"] > main {
+}
+#portfolio-content > .container > .row > div[class*="col"] > main > .row {
+}
+#portfolio-content
+  > .container
+  > .row
+  > div[class*="col"]
+  > main
+  > .row
+  > div[class*="col"]
+  > p {
+  font-size: 10px;
+  text-transform: uppercase;
+}
+#portfolio-content
+  > .container
+  > .row
+  > div[class*="col"]
+  > main
+  > .row
+  > div[class*="col"] {
+  margin-bottom: 1.5em;
+}
+#portfolio-content
+  > .container
+  > .row
+  > div[class*="col"]
+  > main
+  > .row
+  > div[class*="col-sm-12"]:first-of-type {
+  text-align: left;
+}
+#portfolio-content
+  > .container
+  > .row
+  > div[class*="col"]
+  > main
+  > .row
+  > div[class*="col-sm-6"]:nth-child(2n) {
+  /*	clear: left; */
+}
+#portfolio-content .gallery-thumb {
+  height: 200px;
+  overflow: hidden;
+  margin-bottom: 0.15em;
+}
+#portfolio-content > .gallery-thumb > a {
+  display: block;
+}
+#portfolio-content > .gallery-thumb > a > img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* secondary gallery */
+
+#portfolio-content > .container > .row + .row > div[class*="col"] {
+  margin: 0 0 1.5em;
+}
+#portfolio-content
+  > .container
+  > .row
+  + .row
+  > div[class*="col-sm-3"]:nth-child(4n + 5) {
+  clear: left;
+}
+#portfolio-content .gallery-thumb > a > img {
+  transform: scale(1);
+  transition: 0.3s ease-in-out;
+}
+#portfolio-content .gallery-thumb > a:hover > img {
+  transform: scale(1.3);
+}
+
+#portfolio-content > .container > .row > div[class*="col"] > aside {
+}
+#portfolio-content > .container > .row > div[class*="col"] > aside > h3 {
+  color: #333;
+  font-size: 26px;
+}
+#portfolio-content > .container > .row > div[class*="col"] > aside > p {
+  margin: 0 0 0.5em;
+  line-height: 1.5em;
+}
+#portfolio-content
+  > .container
+  > .row
+  > div[class*="col"]
+  > aside
+  > p:last-of-type {
+  margin: 0 0 1.5em;
+}
+#portfolio-content > .container > .row > div[class*="col"] > aside > p > span {
+  font-weight: 700;
+  color: rgb(232, 76, 61);
+}
+#portfolio-content
+  > .container
+  > .row
+  > div[class*="col"]
+  > aside
+  > p
+  > strong {
+  font-weight: 700;
+  font-style: italic;
+}
+#portfolio-content > .container > .row > div[class*="col"] > aside > a {
+  font-size: 18px;
+  line-height: 20px;
+  padding: 18px 36px;
+  border-radius: 4px;
+  background: #e84b3d;
+  display: inline-block;
+  -webkit-border-radius: 4px;
+  border: 1px solid #dc3f31;
+}
+#portfolio-content > .container > .row > div[class*="col"] > aside > a:hover {
+  background: #c1392d;
+  text-decoration: none;
+  border: 1px solid #b52d21;
+}
+#portfolio-content > .container > .row > div[class*="col"] > aside > a > i {
+  width: auto;
+  height: auto;
+  font-size: 1.3em;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+#portfolio-testimonial {
+  background: #ecf0f1;
+}
+#portfolio-testimonial > .container > .row {
+  padding-top: 2.5em;
+  padding-bottom: 2.5em;
+}
+#portfolio-testimonial > .container > .row > div[class*="col"] {
+  text-align: center;
+}
+#portfolio-testimonial > .container > .row > div[class*="col"] > h3 {
+  margin: 0 0 1.5em;
+}
+#portfolio-testimonial > .container > .row > div[class*="col"] > h3 > i {
+  color: #e84c3d;
+  font-size: 50px;
+  margin-right: 15px;
+  vertical-align: middle;
+}
+#portfolio-testimonial > .container > .row > div[class*="col"] > p {
+  font-size: 18px;
+}
+
+.archive
+  #portfolio-content
+  > .container
+  > .row
+  div[class*="col"]:nth-child(odd) {
+  clear: both;
+}
